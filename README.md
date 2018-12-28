@@ -1,3 +1,15 @@
 # blinkt-utils
 
-Helper functions for Pimoroni Blinkt! fun.
+Helper functions for Pimoroni Blinkt! fun with Javascript
+
+## hsv2rgb - convert HSV to RGB values
+
+_Usage_:
+
+```javascript
+const [red, green, blue] = rgb2hsv(360,1,1);
+
+console.log(red); // 255
+console.log(green); // 0
+console.log(blue); // 0
+```
