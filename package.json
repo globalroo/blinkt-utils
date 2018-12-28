@@ -1,0 +1,24 @@
+{
+	"name": "blinkt-utils",
+	"version": "1.0.0",
+	"description": "Helper functions for Blinkt! fun",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "jest",
+		"precommit": "npm install pretty-quick husky --save-dev"
+	},
+	"keywords": [
+		"Blinkt!",
+		"Javascript",
+		"Node"
+	],
+	"author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
+	"license": "MIT",
+	"devDependencies": {
+		"jest": "23.6.0",
+		"prettier": "1.15.3"
+	},
+	"jest": {
+		"roots": ["test"]
+	}
+}
