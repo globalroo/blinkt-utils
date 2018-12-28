@@ -7,6 +7,7 @@ Helper functions for Pimoroni Blinkt! fun with Javascript
 _Usage_:
 
 ```javascript
+const { rgb2hsv } = require("blinkt-utils");
 const [red, green, blue] = rgb2hsv(360,1,1);
 
 console.log(red); // 255
