@@ -5,7 +5,7 @@
 	"main": "src/index.js",
 	"scripts": {
 		"test": "jest",
-		"precommit": "npm install pretty-quick husky --save-dev"
+		"precommit": "pretty-quick --staged"
 	},
 	"keywords": [
 		"Blinkt!",
@@ -15,10 +15,14 @@
 	"author": "Andrew Davies <globalroo@hotmail.com> (http://github.com/globalroo)",
 	"license": "MIT",
 	"devDependencies": {
+		"husky": "1.3.1",
 		"jest": "23.6.0",
-		"prettier": "1.15.3"
+		"prettier": "1.15.3",
+		"pretty-quick": "1.8.0"
 	},
 	"jest": {
-		"roots": ["test"]
+		"roots": [
+			"test"
+		]
 	}
 }
