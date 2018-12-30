@@ -28,12 +28,12 @@ describe("hsb2rgb tests", () => {
 		const [red, green, blue] = hsv2rgb(360, 1, 1);
 		expect({ red, green, blue }).toEqual(RED_OBJECT);
 	});
-	test("Value Faded Red [127,0,0] at 0° and value .5", () => {
+	test("Value Faded Red [128,0,0] at 0° and value .5", () => {
 		const result = hsv2rgb(0, 1, 0.5);
-		expect(result).toEqual([127, 0, 0]);
+		expect(result).toEqual([128, 0, 0]);
 	});
-	test("Saturated Faded Red [255,127,127] at 0° and saturation .5", () => {
+	test("Saturated Faded Red [255,128,128] at 0° and saturation .5", () => {
 		const result = hsv2rgb(0, 0.5, 1);
-		expect(result).toEqual([255, 127, 127]);
+		expect(result).toEqual([255, 128, 128]);
 	});
 });

@@ -1,5 +1,7 @@
-const { hsv2rgb } = require("./hsv2rgb");
+const { hsv2rgb_a, hsv2rgb_b, hsv2rgb } = require("./hsv2rgb");
 
 module.exports = {
+	hsv2rgb_a: hsv2rgb_a,
+	hsv2rgb_b: hsv2rgb_b,
 	hsv2rgb: hsv2rgb
 };
