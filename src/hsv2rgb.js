@@ -70,8 +70,39 @@ function hsv2rgb_method2(h, s, v) {
 	}
 }
 
+const hsv2rgb_method3 = (h, s, v) => {
+	h = Math.floor(h / 60);
+	const i = Math.floor(h);
+	const f = h - i;
+
+	let p = v * (1 - s);
+	let q = v * (1 - s * f);
+	let t = v * (1 - s * (1 - f));
+
+	v = Math.floor(255 * v);
+	p = Math.floor(255 * p);
+	q = Math.floor(255 * q);
+	t = Math.floor(255 * t);
+
+	switch (i % 6) {
+		case 0:
+			return [v, t, p];
+		case 1:
+			return [q, v, p];
+		case 2:
+			return [p, v, t];
+		case 3:
+			return [p, q, v];
+		case 4:
+			return [t, p, v];
+		default:
+			return [v, p, q];
+	}
+};
+
 module.exports = {
 	hsv2rgb_a: hsv2rgb_method1,
 	hsv2rgb_b: hsv2rgb_method2,
+	hsv2rgb_c: hsv2rgb_method3,
 	hsv2rgb: hsv2rgb_method1 //default - seems more accurate on saturation calcs
 };
