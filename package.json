@@ -1,6 +1,6 @@
 {
 	"name": "blinkt-utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Helper functions for Blinkt! fun",
 	"main": "src/index.js",
 	"scripts": {
