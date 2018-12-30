@@ -3,7 +3,7 @@
 Helper functions for Pimoroni Blinkt! fun with Javascript
 
 ```sh
-npm i blink-utils --save
+npm i blinkt-utils --save
 ```
 ## hsv2rgb - convert HSV to RGB values
 
