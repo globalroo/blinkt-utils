@@ -11,7 +11,7 @@ const RED_OBJECT = { red: 255, green: 0, blue: 0 };
 const GREEN_OBJECT = { red: 0, green: 255, blue: 0 };
 const BLUE_OBJECT = { red: 0, green: 0, blue: 255 };
 
-describe("hsb2rgb tests", () => {
+describe("hsv2rgb tests", () => {
 	test("Red [255,0,0] at 0°", () => {
 		const [red, green, blue] = hsv2rgb(0, 1, 1);
 		expect({ red, green, blue }).toEqual(RED_OBJECT);

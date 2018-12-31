@@ -10,8 +10,8 @@ npm i blinkt-utils --save
 _Usage_:
 
 ```javascript
-const { rgb2hsv } = require("blinkt-utils");
-const [red, green, blue] = rgb2hsv(360,1,1);
+const { hsv2rgb } = require("blinkt-utils");
+const [red, green, blue] = hsv2rgb(360,1,1);
 
 console.log(red); // 255
 console.log(green); // 0
